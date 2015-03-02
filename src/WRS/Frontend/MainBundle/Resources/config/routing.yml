@@ -1,0 +1,3 @@
+wrs_frontend_main_homepage:
+    path:     /wrs/{name}
+    defaults: { _controller: WRSFrontendMainBundle:Default:index }

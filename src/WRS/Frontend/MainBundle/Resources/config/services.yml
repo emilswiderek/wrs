@@ -1,0 +1,4 @@
+services:
+#    wrs_frontend_main.example:
+#        class: WRS\Frontend\MainBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

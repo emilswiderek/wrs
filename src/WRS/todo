@@ -1,0 +1,4 @@
+.htaccess in /web change all app_dev.php to app.php
+
+before switching to production:
+php app/console cache:clear --env=prod --no-debug
