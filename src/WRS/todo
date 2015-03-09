@@ -2,3 +2,5 @@
 
 before switching to production:
 php app/console cache:clear --env=prod --no-debug
+
+change robots.txt

@@ -1,0 +1,31 @@
+.style-buttons{text-align:center;}
+
+.style-buttons a{
+	display: inline-block;
+	margin-right: 5px;
+	margin-bottom: 15px;
+	height: 55px;
+	width: 48px;
+	padding: 0 20px;
+	}
+.style-buttons div{
+	display: inline;
+	position: relative;
+}
+
+.style-bold{background: url("../images/edytor/edytor_b.png") no-repeat;}
+.style-bold:hover{background: url("../images/edytor/edytor_b_hover.png") no-repeat;}
+.style-italic{background: url("../images/edytor/edytor_i.png") no-repeat;}
+.style-italic:hover{background: url("../images/edytor/edytor_i_hover.png") no-repeat;}
+.style-underline{background: url("../images/edytor/edytor_u.png") no-repeat;}
+.style-underline:hover{background: url("../images/edytor/edytor_u_hover.png") no-repeat;}
+.style-h4{background: url("../images/edytor/edytor_h4.png") no-repeat;}
+.style-h4:hover{background: url("../images/edytor/edytor_h4_hover.png") no-repeat;}
+
+.style-alt{display: none; position: absolute; bottom: 0px; font-size: 12px; left: 0; line-height: 18px;}
+.style-buttons a:hover ~ .style-alt{display: block;}
+.style-buttons a:hover + .style-alt{display: block;}
+.style-bold-alt{font-weight: bold;}
+.style-italic-alt{font-style: italic;}
+.style-underline-alt{text-decoration: underline;}
+.style-h4-alt{font-weight: bold;font-size: 14px;}

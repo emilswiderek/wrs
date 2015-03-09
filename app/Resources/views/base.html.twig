@@ -1,13 +1,138 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+    <head>{% block head %}
+        <meta charset="utf-8" />
+        <meta property="og:type" content="university" />
+        <meta property="fb:admins" content="emil.swiderek, sucharinio, mateusz.solinski.7" />
+        <link rel="stylesheet" href="{{ asset('bundles/wrsfrontendmain/css/960/960.css') }}" />
+        <link rel="stylesheet" href="{{ asset('bundles/wrsfrontendmain/css/960/reset.css') }}" />
+        <link rel="stylesheet" href="{{ asset('bundles/wrsfrontendmain/css/960/text.css') }}" />
+        <link rel="stylesheet" href="{{ asset('bundles/wrsfrontendmain/css/960/default.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('bundles/wrsfrontendmain/css/arkusz.css') }}" />
+        <title>{% block title %}WRS: Wydziałowa Rada Samorządu Wydziału Fizyki PW {% endblock %}</title>
+        {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
-</html>
+        <div class="container_16 all"> 
+            <div id="fb-root"></div>
+            <script>
+                (function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id))
+                        return;
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "//connect.facebook.net/pl_PL/all.js#xfbml=1";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>	
+            <div class="grid_16 " >
+                <div class="grid_10" id="image">
+                   {{ render(controller("WRSFrontendMainBundle:Default:headerImage")) }}
+                </div>
+                <div class="grid_5" id="logo">
+                    <a href="http://wrs.fizyka.pw.edu.pl/index.php"><img src="{{ asset('bundles/wrsfrontendmain/images/logo.png') }}" alt="Logo WRS-u"></a>
+                </div> 
+            </div>
+            <div class="clear"></div>
+            <div class="grid_16"><hr> <!-- separator -->
+                    <ul id="nav"> <!-- menu bar --> 
+                        <li><a href="http://wrs.fizyka.pw.edu.pl/index.php">AKTUALNOŚCI</a></li>
+                        <li><a href="http://wrs.fizyka.pw.edu.pl/dzialania.php">DZIAŁANIA</a></li>
+                        <li id="wysuw"><a href="http://wrs.fizyka.pw.edu.pl/socjal/index.php">SOCJAL</a>
+                            <ul>test1</ul>
+                            <ul>test2</ul>
+                        </li>
+                        <li><a href="http://wrs.fizyka.pw.edu.pl/dokumenty.php">DOKUMENTY</a></li>
+                        <li><a href="http://wrs.fizyka.pw.edu.pl/sklad.php">SKŁAD</a></li>
+                        <li><a href="http://wrs.fizyka.pw.edu.pl/linki.php">LINKI</a></li></ul>
+            </div>
+            <hr><br>
+                    <div class="clear"></div>			
+                    <div class="grid_16">						<!-- top section -->
+                        <div class="grid_2" id="links">
+                            <a href="https://www.facebook.com/pages/WRS-Wydzia%C5%82u-Fizyki-Politechniki-Warszawskiej/111396338942598?fref=ts" target="_blank" title="WRS Fizyki PW na Facebooku"><img src="http://wrs.fizyka.pw.edu.pl/images/loga/fc1.png" alt="facebook"></a>
+                            <a href="https://student.if.pw.edu.pl/poczta/" target="_blank" title="Poczta student"><img src="http://wrs.fizyka.pw.edu.pl/images/loga/poczta_student.png" alt="gmail"></a>
+                            <a href="http://www.fizyka.pw.edu.pl/" target="_blank" title="Strona Wydziału Fizyki PW"><img src="http://wrs.fizyka.pw.edu.pl/images/loga/if.png"  alt="if.pw.edu.pl"></a>
+                            <a href="http://www.pw.edu.pl/" target="_blank" title="Strona Politechniki Warszawskiej"><img src="http://wrs.fizyka.pw.edu.pl/images/loga/pw.png" alt="pw.edu.pl"></a>
+                            <a href="http://samorzad.pw.edu.pl/index.html" target="_blank" title="Strona SSPW"><img src="http://wrs.fizyka.pw.edu.pl/images/loga/sspw.png" alt="samorzad.pw.edu.pl">
+                                    <a href="http://www.polibuda.info/" target="_blank" title="Serwis Polibuda Info"><img src="http://wrs.fizyka.pw.edu.pl/images/loga/polibuda_info.png" alt="polibuda.info"></a>
+                                    <a href="http://www.tvpw.pl/" target="_blank" title="TVPW"><img src="http://wrs.fizyka.pw.edu.pl/images/loga/tv_pw.png" alt="tvpw.pls"></a>
+                                    <a href="http://radioaktywne.pl/" target="_blank" title="Radio Aktywne"><img src="http://wrs.fizyka.pw.edu.pl/images/loga/radio_aktywne.png" alt="radioaktywne.pl"></a>
+                                    <a href="http://www.ipewu.pw.edu.pl/" target="_blank" title="Miesięcznik Kulturalny Studentów PW ipewu"><img src="http://wrs.fizyka.pw.edu.pl/images/loga/ipewu.png" alt="ipewu"></a>
+                                    <a href="http://gate.bg.pw.edu.pl/F" target="_blank"title="Biblioteka Główna PW: Katalog"><img src="http://wrs.fizyka.pw.edu.pl/images/loga/bgpw.png" alt="gate.bg.pw.edu.pl/F"></a>
+                                    </div>					
+                                    <div class="grid_9" id="top">
+                                        {% block content %}
+                                        <h2>Pusta strona</h2> <hr>
+                                            <p><br></p>
+                                            <table>
+                                                <tr>
+                                                    <td><img src="images/komisja/kd_ico.png"></td>
+                                                    <td><h3><strong><a href="#">Ta strona jest pusta, ponieważ nie jest jeszcze gotowa. </a></strong></h3>
+                                                        <p id="data_author"> Autor: e.swiderek </p></td>
+                                                </tr></table>
+                                            <p>Test </p>
+                                            <br/>
+                                            <div class="fb-like" data-href="http://wrs.fizyka.pw.edu.pl/wiecej.php?id=2014-12-08 22:18:50" data-send="false" data-layout="button_count" data-width="200" data-show-faces="false" data-font="trebuchet ms" data-action="recommend">
+                                            </div>
+                                            <br/><br/><hr>
+                                                <br/>
+                                                <p><center><a href="index.php?page=1"><i> Zobacz starsze wiadomosci  > > </i></center> </a></p>					  </p>
+                                        {% endblock %}
+                                    </div>
+                                                <div class="grid_5" id="calendar">
+                                                    <hr>
+                                                        <center><h4>Kalendarz:</h4></center>
+                                                        <hr>
+                                                            {{ render(controller("WRSFrontendMainBundle:Calendar:index")) }}
+                                                            <div id="citations">
+                                                                <hr>
+                                                                    <center><h4>CYTATY</h4></center>
+                                                                    <hr>
+                                                                        <div id="cit_inside">
+                                                                            <p> <a href="http://wrs.fizyka.pw.edu.pl/cytaty_wiecej.php?id=2013-03-02 16:37:40"><p class="cit_tresc"><strong>A teraz cofnijmy się do początków Wszechświata. W 1928 roku...</strong></a></p><p class="cit_who">prof. Sławomir Podsiadło</p><p class="cit_kontekst">wykład z chemii</p><div class="fb-like" data-href="http://wrs.fizyka.pw.edu.pl/cytaty_wiecej.php?id=2013-03-02 16:37:40" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div></p>
+                                                                        </div>
+                                                                        <hr>
+                                                                        <div id="cit_rules">
+                                                                            <p><a href="wyswietl_cytaty.php">Obejrzyj wszystkie</a> lub <a href="dodaj_cytat.php">dodaj własny cytat tutaj</a>. </p>
+                                                                        </div>
+                                                            </div>
+                                                </div>
+                                                <div class="clear"></div>
+                                                                            <div class="grid_16">
+                                                                                <hr>
+                                                                            </div>
+                                                                            <div class="clear"></div>
+                                                                            <div class="grid_2" id="fotter">
+                                                                                <p><a href="autorzy.php"><span class="letter">A</span>utorzy strony</a></p>
+                                                                            </div>
+                                                                            <div class="grid_11" id="fotter">						<!-- fotter -->
+                                                                                <p> (c) Wydziałowa Rada Samorządu Studentów Wydziału Fizyki <br> Politechnika Warszawska 2015 </p>
+                                                                            </div>
+                                                                            <div class="grid_3" id="fotter">
+                                                                                <!-- stat.4u.pl NiE KaSoWaC --> 
+                                                                                <a target=_top href="http://stat.4u.pl/?wrswf" title="statystyki stron WWW"><img alt="stat4u" src="http://adstat.4u.pl/s4u.gif" border="0"></a> 
+                                                                                <script language="JavaScript" type="text/javascript">
+                                                                                    <!-- 
+                                                                                function s4upl() {
+                                                                                        return "&amp;r=er";
+                                                                                    }
+                                                                                    //--> 
+                                                                                </script> 
+                                                                                <script language="JavaScript" type="text/javascript" src="http://adstat.4u.pl/s.js?wrswf"></script> 
+                                                                                <script language="JavaScript" type="text/javascript">
+                                                                                    <!-- 
+                                                                                s4uext = s4upl();
+                                                                                    document.write('<img alt="stat4u" src="http://stat.4u.pl/cgi-bin/s.cgi?i=wrswf' + s4uext + '" width="1" height="1">')
+                                                                                    //--> 
+                                                                                </script> 
+                                                                                <noscript><img alt="stat4u" src="http://stat.4u.pl/cgi-bin/s.cgi?i=wrswf&amp;r=ns" width="1" height="1"></noscript> 
+                                                                                <!-- stat.4u.pl KoNiEc -->
+
+                                                                                <a href="http://www.google.com/a/samorzad.if.pw.edu.pl" target="_blank"><img src="http://wrs.fizyka.pw.edu.pl/images/wrs_gmail.png" atl="wrs_gmail"></a>
+                                                                                <a href="http://wrs.fizyka.pw.edu.pl/panel/index.php"><img src="http://wrs.fizyka.pw.edu.pl/images/log_ico.png" atl="log_ico"></a></div>
+                                                                            <div class="clear"></div>	
+                                                                            </div>
+                                                                        </body>
+                                                                        </html>

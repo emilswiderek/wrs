@@ -1,3 +1,8 @@
+wrs_frontend_main:
+    resource: "@WRSFrontendMainBundle/Resources/config/routing.yml"
+    prefix:   /
+    defaults: {_controller: "WRSFrontendMainBundle:Default:index" }
+
 app:
     resource: @AppBundle/Controller/
     type:     annotation

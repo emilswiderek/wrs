@@ -1,0 +1,398 @@
+@charset "UTF-8";
+
+@font-face {
+
+	font-family: righteousfizykapw;
+	src: url('../../Fonts/righteousfizykapw/righteousfizykapw.ttf'); /* IE9 Compat Modes */
+	src: url("../../Fonts/righteousfizykapw/righteousfizykapw.eot");
+    src: url('../../Fonts/righteousfizykapw/righteousfizykapw.ttf') format('truetype'),
+    url("../../Fonts/righteousfizykapw/righteousfizykapw.eot") format('embedded-opentype'),
+		url('../../Fonts/righteousfizykapw/righteousfizykapw.eot?iefix') format('eot');
+			 
+			 
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+	
+
+	font-family: flatformlight;
+	src: url('../../Fonts/Capsuula/capsuula.ttf'); /* IE9 Compat Modes */
+	src: url("../../Fonts/Capsuula/capsuula.eot");
+    src: url('../../Fonts/Capsuula/capsuula.ttf') format('truetype'),
+    url("../../Fonts/Capsuula/capsuula.eot") format('embedded-opentype'),
+		url('../../Fonts/Capsuula/capsuula.eot?iefix') format('eot');
+			 
+			 
+font-weight: normal;
+font-style: normal;
+}
+
+
+
+body {
+	background-image:url('../../images/background.jpg');
+	background-attachment: fixed;
+	-webkit-background-attachment: fixed;
+	-moz-background-attachment: fixed;
+	-o-background-attachment: fixed;
+}
+
+p{
+	text-align: justify;
+	font-family: Calibri;
+	font-style: bold;
+	font-size: 15px;
+}
+
+a{
+
+	text-decoration: none;
+	color: black;
+	
+
+}
+
+h1{
+
+		color: #221D1D;
+}
+
+h2{
+
+
+	font-family: flatformlight, Century Gothic;
+}
+
+h3{
+
+	font-family: flatformlight, Century Gothic;
+	font-size: 20px;
+	
+}
+
+h4{
+
+	font-family: righteousfizykapw, Century Gothic;
+	font-size: 15px;
+	
+}
+
+h5{
+
+	font-style: normal;
+	text-decoration: underline;
+	font-size: 90%;
+	font-family: Calibri Light;
+	color: #333333;
+
+}
+
+.grid_16{
+
+	padding-top: 10px;
+}
+
+.all{
+
+	background:  url(../../images/background4.png) repeat transparent;
+}
+
+
+
+#nav{
+	
+	padding-left: 120px !important;
+}
+
+
+ul#nav, ul#nav li{
+
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+ul#nav li a{
+
+	display: block;
+	/*float: left;*/
+	padding: 3px;
+	padding-right: 10px !important;
+	font-size: 16px;
+	font-family: righteousfizykapw;
+	
+}
+
+a:visited{
+
+	color: black;
+}
+
+a:hover{
+
+	color: #990000;
+	
+}
+
+table tr td {
+    padding: 0 5px 10px 0px !important;
+		text-align: justify;
+		font-family: Calibri;
+		font-size: 15px;
+}
+
+
+
+table{
+
+	margin-right: 10px !important;
+}
+
+table tr td #data_author{
+
+	font-size: 80%; 
+}
+
+
+/*#links{
+
+	padding-top: 40px;
+	
+}*/
+
+#links img{
+	
+	padding-top: 20px;
+	padding-right: 15px !important;
+	border-right-style: solid; border-right-width: 1px; border-right-color: #cccccc;
+}
+	
+#calendar{
+
+	padding-top: 0px;
+	float: right;
+	margin-right: 0px !important;
+}
+
+#fotter{
+
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+#fotter p{
+	
+	
+	font-size: x-small;
+	color: #454545;
+	text-align: center;
+}
+
+#fotter p a{
+	
+	
+	font-size: x-small;
+	color: #454545;
+	text-align: center;
+}
+
+#fotter p a:hover{
+	
+	color: #990000;
+
+}
+
+
+
+#fotter img{
+
+	padding-top: 2px;
+}
+
+
+#top{
+
+margin: 0 0 0 0 !important;
+
+}
+
+#sklad_osoba{
+	
+	padding-bottom: 200px;
+	padding-left: 50px !important;
+
+}
+
+.name{
+
+	text-decoration: blink;
+}
+
+.sklad_foto{
+
+	float: left;
+}
+
+.sklad_opis{
+
+	margin-left: 180px;
+}
+
+#citations{
+
+	margin-top: 20px;
+}
+
+#cit_inside{
+
+	background: transparent url(../../images/cit_tlo.png) repeat;
+	
+}
+
+#cit_inside p{
+
+	font-style: italic;
+	margin-left: 10px !important;
+	margin-right: 10px !important;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.fb-like{
+
+	margin-left: 10px !important;
+	margin-right: 10px !important;
+}
+
+.fb-like inframe{
+
+	margin-left: 10px !important;
+	margin-right: 10px !important;
+}
+
+p.cit_tresc{
+
+	line-height: 85%;
+}
+
+p.cit_who{
+
+	text-align: right;
+	font-size: 87%;
+
+}
+
+p.cit_kontekst{
+
+	line-height: 90%;
+	font-size: 100%;
+	color: #333333;
+}
+
+
+#cit_inside:hover{
+
+	background: transparent url(../../images/cit_tlo_hov.png) repeat;
+	
+}
+
+#cit_inside p:hover{
+
+	font-style: oblique;
+}
+
+#cit_rules p{
+	
+	font-size: 90%;
+	font-style: italic;
+	color: #666666;
+	float: right;
+}
+
+#cit_rules p a{
+	
+	color: #6699ff;
+}
+
+#citdod_war ul li{
+
+	font-size: 90%;
+	font-style: normal;
+	font-family: Calibri Light;
+
+}
+
+
+.letter{
+
+	font-size: 160%;
+}
+
+li#wysuw{
+ float: left;
+
+ padding: 5px 0 0;
+ 
+ background-image: none;
+ /*height: 35px;*/
+ margin-right: 10px;
+
+}
+li#wysuw:hover{
+
+}
+li#wysuw > ul li{
+ float: none;
+ margin: 0;
+ padding: 0;
+ width: 100%;
+ 
+}
+li#wysuw > ul li:hover{
+ display: inline;
+}
+li#wysuw > ul{
+ 
+ position: absolute;
+ /*top: 248px;*/
+ display: none;
+ padding: 0 0 0 2px;
+ margin: 0;
+ background: #fff;
+ border-bottom: 5px solid #c2000b;
+ border-top: 1px solid #c2000b;
+
+
+}
+
+li#wysuw:hover > ul{
+ display: block;
+}
+
+li#wysuw li a span{
+
+	display: block;
+	margin: 0;
+	padding: 3px 8px 1px 9px;
+	position: relative;
+	font-family: righteousfizykapw;
+}
+
+li#wysuw li a{
+
+	border-bottom: 2px solid #F5F5F0;
+}
+
+
+
+p#wykorzystano{
+
+	margin: 0 25px;
+	font-size: small;
+	
+
+}
